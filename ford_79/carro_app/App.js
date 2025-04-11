@@ -6,6 +6,7 @@ import Presion from "./src/screens/Presion";
 import Mapeo from "./src/screens/Mapeo";
 import Tablero from "./src/screens/Tablero";
 import Home from "./src/screens/Home";
+import Componentes from "./src/screens/Componentes";
 
 const Stack = createStackNavigator();
 
@@ -14,6 +15,7 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Componentes" component={Componentes} />
         <Stack.Screen name="Humedad" component={Humedad} />
         <Stack.Screen name="Temperatura" component={Temperatura} />
         <Stack.Screen name="Presion" component={Presion} />

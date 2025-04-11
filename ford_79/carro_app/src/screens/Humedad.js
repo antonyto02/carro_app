@@ -57,6 +57,7 @@ const Humedad = () => {
       setPerMinuteAverages(groupedAverages);
     } catch (error) {
       console.error("Error al cargar datos:", error);
+      alert("Error de conexión con el backend:\n" + error.message);
     } finally {
       setLoading(false);
     }
